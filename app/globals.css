@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Applying Solis brand colors */
+    --font-sans: var(--font-quicksand);
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%; /* #000000 */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    /* Primary: Solis Purple #5C029B */
+    --primary: 277 98% 31%;
+    --primary-foreground: 0 0% 100%;
+    /* Secondary: Solis Yellow #F5DC00 */
+    --secondary: 51 100% 48%;
+    --secondary-foreground: 0 0% 0%;
+    /* Accent: Solis Secondary Purple #372156 */
+    --accent: 270 42% 23%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 277 98% 31%;
+    --chart-1: 51 100% 48%;
+    --chart-2: 277 98% 31%;
+    --chart-3: 270 42% 23%;
+    --chart-4: 245 100% 69%;
+    --chart-5: 0 0% 0%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 277 98% 31%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 51 100% 48%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 277 98% 31%;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 277 98% 31%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 51 100% 48%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 270 42% 23%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 277 98% 31%;
+    --chart-1: 51 100% 48%;
+    --chart-2: 277 98% 31%;
+    --chart-3: 270 42% 23%;
+    --chart-4: 245 100% 69%;
+    --chart-5: 0 0% 100%;
+    --sidebar-background: 270 42% 23%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 51 100% 48%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 277 98% 31%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 51 100% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
