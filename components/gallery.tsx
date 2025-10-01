@@ -39,6 +39,13 @@ const defaultProjects: Project[] = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Trilhas%20de%20Aprendizagem%20-%20DOC-EqchkPYt7D9H3acfa3baHPMwVDuiW5.png",
     file: "trails-solis.pdf",
   },
+  {
+    id: "3",
+    title: "Como usar o sistema de Midias",
+    category: "Tutorial",
+    image: "/media-solis.png",
+    file: "media-solis.pdf",
+  }
 ]
 
 function getDownloadFilename(title: string): string {
